@@ -1,7 +1,5 @@
 language: java
 jdk: oraclejdk8
-install: true
-script:
-- mvn install -f pom.xml
+install: mvn install -f pom.xml
 after_success:
 - mvn coveralls:report
